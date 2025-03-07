@@ -1,6 +1,6 @@
 {
-  "name": "project_data",
-  "version": "1.0.0",
+  "name": "pinapp-products-data",
+  "version": "1.1.0",
   "description": "",
   "main": "index.js",
   "scripts": {
