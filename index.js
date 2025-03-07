@@ -26,7 +26,7 @@ const generateProducts = (count = 20) => {
   }));
 };
 
-const db = { products: generateProducts(50) };
+const db = { products: generateProducts(200) };
 
 const router = jsonServer.router(db);
 
