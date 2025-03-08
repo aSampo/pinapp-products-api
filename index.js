@@ -19,13 +19,13 @@ const generateProducts = (count = 20) => {
     sku: faker.string.alphanumeric(8).toUpperCase(),
     name: faker.commerce.productName(),
     description: faker.commerce.productDescription(),
-    image: faker.image.url({ width: 300, height: 300, category: 'products' }),
+    image: `https://picsum.photos/600/600?random=${i + 1}`,
     category: {
       id: faker.string.uuid(),
       name: faker.commerce.department()
     },
     brand: faker.company.name(),
-    price: parseFloat(faker.commerce.price({ min: 10, max: 500 })),
+    price: parseFloat(faker.commerce.price({ min: 10, max: 1000 })),
     stock: faker.number.int({ min: 0, max: 100 }),
     specifications: Array.from({ length: 3 }, () => {
       const category = faker.helpers.arrayElement(Object.keys(specificationCategories));
