@@ -27,13 +27,10 @@ const generateProducts = (count = 20) => {
     brand: faker.company.name(),
     price: parseFloat(faker.commerce.price({ min: 10, max: 1000 })),
     stock: faker.number.int({ min: 0, max: 100 }),
-    specifications: Array.from({ length: 3 }, () => {
-      const category = faker.helpers.arrayElement(Object.keys(specificationCategories));
-      return {
-        name: category,
-        value: specificationCategories[category]()
-      };
-    })
+    specifications: Object.entries(specificationCategories).map(([category, generator]) => ({
+      name: category,
+      value: generator()
+    }))
   }));
 };
 
