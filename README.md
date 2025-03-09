@@ -1,22 +1,51 @@
-# JSON_Server_Deployment
+# Pinapp Products API
 
+Code challenge para Pinapp, implementa una API REST para gestionar productos. La API utiliza JSON Server y Faker.js para generar datos de prueba realistas.
 
+## 🚀 Tecnologías Utilizadas
 
+- JSON Server
+- Faker.js
+- Node.js
 
-By utilizing the provided template, you will be able to create your JSON server repository, which can be deployed on render.com
---------------
+## 🛠️ Instalación
 
+1. Clona el repositorio:
 
-[![Nice UI](https://img.youtube.com/vi/W9sbA1a2-Ag/0.jpg)](https://www.youtube.com/watch?v=W9sbA1a2-Ag)
+```bash
+git clone https://github.com/aSampo/pinapp-products-api.git
+cd pinapp-products-api
+```
 
+2. Instala las dependencias:
 
-In this video, I have covered three simple steps to quickly deploy your **JSON Server** on render.com.
+```bash
+npm install
+```
 
-Three Simple Steps:
+## 🏃‍♂️ Cómo ejecutar el proyecto
 
-1. Create a repository from the template.
-2. Add your own data.
-3. Deploy it.
+1. Para iniciar el servidor en modo desarrollo:
 
-Believe me, this is the **easiest way** to deploy your JSON server on render.com. Deploy your db.json file without writing a **single line of code**.
+```bash
+npm start
+```
 
+2. El servidor estará disponible en: http://localhost:3000
+
+## 📚 Endpoints disponibles
+
+- `GET /products` - Obtener todos los productos
+- `GET /products/:id` - Obtener un producto por ID
+
+## 🌐 Despliegue
+
+La API está desplegada y disponible en Render:
+
+[https://pinapp-products-api.onrender.com](https://pinapp-products-api.onrender.com)
+
+## 📝 Notas
+
+- Los datos son generados automáticamente usando Faker.js para simular un ambiente real
+- La base de datos es reiniciada cada vez que se reinicia el servidor
+- Este proyecto es solo para fines de demostración como parte del challenge
