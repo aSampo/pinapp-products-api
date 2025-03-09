@@ -31,7 +31,7 @@ npm install
 npm start
 ```
 
-2. El servidor estará disponible en: http://localhost:3000
+2. El servidor estará disponible en: http://localhost:8080
 
 ## 📚 Endpoints disponibles
 
